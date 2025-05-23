@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toppan's Product Assistant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #eef2f7;
+      font-family: Arial, sans-serif;
+    }
+    .chat-container {
+      max-width: 800px;
+      margin: 3rem auto;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .chat-box {
+      max-height: 400px;
+      overflow-y: auto;
+      margin-bottom: 1rem;
+      padding-right: 10px;
+    }
+    .user-msg, .bot-msg {
+      margin-bottom: 1rem;
+      padding: 0.75rem 1rem;
+      border-radius: 15px;
+      max-width: 75%;
+      word-wrap: break-word;
+    }
+    .user-msg {
+      background-color: #d1e7dd;
+      align-self: flex-end;
+      margin-left: auto;
+    }
+    .bot-msg {
+      background-color: #f8d7da;
+      align-self: flex-start;
+    }
+    .chat-entry {
+      display: flex;
+      flex-direction: column;
+    }
+    .option-btn {
+      margin: 0.25rem 0.5rem 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <h4 class="text-center mb-4">🤖 Toppan's Product Assistant</h4>
+    <div id="chat" class="chat-box border rounded p-3 bg-light"></div>
+
+    <div id="option-buttons" class="mb-3"></div>
+
+    <div class="input-group mb-3">
+      <input type="text" id="query" class="form-control" placeholder="Type or click a button...">
+      <button id="sendBtn" class="btn btn-primary">Send</button>
+      <button id="clearBtn" class="btn btn-secondary ms-2">Clear</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    function addMessage(text, sender = 'bot') {
+      const msgClass = sender === 'user' ? 'user-msg' : 'bot-msg';
+      const html = `<div class="chat-entry"><div class="${msgClass}">${text}</div></div>`;
+      $('#chat').append(html);
+      $('#chat').scrollTop($('#chat')[0].scrollHeight);
+    }
+
+    function extractOptions(text) {
+      const match = text.match(/Options: (.+)/i);
+      return match ? match[1].split(/,\s*/) : [];
+    }
+
+    function showOptions(options) {
+      $('#option-buttons').empty();
+      options.forEach(opt => {
+        const btn = $('<button>')
+          .addClass('btn btn-outline-primary option-btn')
+          .text(opt)
+          .click(() => sendQuery(opt));
+        $('#option-buttons').append(btn);
+      });
+    }
+
+    function sendQuery(customQuery = null) {
+      const query = customQuery || $('#query').val().trim();
+      if (!query) return;
+      addMessage(query, 'user');
+      $('#query').val('');
+      $('#option-buttons').empty();
+
+      $.ajax({
+        url: '/search',
+        method: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({ query }),
+        success: function (data) {
+          data.forEach(item => {
+            if (item["Product Name"]) {
+              let response = `<strong>${item["Product Name"]}</strong>`;
+              Object.keys(item).forEach(key => {
+                if (key !== "Product Name" && item[key]) {
+                  response += `<br>${key}: ${item[key]}`;
+                }
+              });
+              addMessage(response);
+              const options = extractOptions(item["Product Name"]);
+              if (options.length > 0) {
+                showOptions(options);
+              }
+            }
+          });
+        }
+      });
+    }
+
+    $('#sendBtn').click(() => sendQuery());
+    $('#query').keypress(function (e) {
+      if (e.which === 13) sendQuery();
+    });
+
+    $('#clearBtn').click(function () {
+      $('#chat').empty();
+      $('#query').val('');
+      $('#option-buttons').empty();
+    });
+
+    // Show greeting message on load
+    $(document).ready(function () {
+      addMessage("👋 Hello! Please tell me your desired application (e.g., snacks,Milk powder, Bakery).");
+    });
+  </script>
+</body>
+</html>

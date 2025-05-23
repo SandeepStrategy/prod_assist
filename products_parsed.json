@@ -1,0 +1,334 @@
+[
+  {
+    "Product Name": "SL5 ",
+    "Application": [
+      "snacks",
+      "chips"
+    ],
+    "Thickness": [
+      "15"
+    ],
+    "Type": "Sandwich Lamination",
+    "Surface Treatment": "",
+    "Gloss Level": "",
+    "WVTR": "0.3",
+    "Features": " Met Pet replacement",
+    "OTR": [
+      "1"
+    ]
+  },
+  {
+    "Product Name": "SL6 ",
+    "Application": [
+      "coffee",
+      "dry foods"
+    ],
+    "Thickness": [
+      "15",
+      "18"
+    ],
+    "Type": "Sandwich Lamination",
+    "Surface Treatment": "",
+    "Gloss Level": "",
+    "WVTR": "0.2",
+    "Features": "AI foil & Met Pet replacement",
+    "OTR": [
+      "0.2"
+    ]
+  },
+  {
+    "Product Name": "SL7 ",
+    "Application": [
+      "coffee",
+      "beverage powder"
+    ],
+    "Thickness": [
+      "15",
+      "18"
+    ],
+    "Type": "Sandwich Lamination",
+    "Surface Treatment": "",
+    "Gloss Level": "",
+    "WVTR": "0.1",
+    "Features": "AI foil replacement",
+    "OTR": [
+      "0.1"
+    ]
+  },
+  {
+    "Product Name": "SL8 ",
+    "Application": [
+      "Milk powder",
+      "Nutrition powder",
+      "infant powder"
+    ],
+    "Thickness": [
+      "15",
+      "18"
+    ],
+    "Type": "Sandwich Lamination",
+    "Surface Treatment": "",
+    "Gloss Level": "",
+    "WVTR": "0.8",
+    "Features": "AI foil replacement",
+    "OTR": [
+      "0.8"
+    ]
+  },
+  {
+    "Product Name": "MSOB3",
+    "Application": [
+      "chips",
+      "snacks"
+    ],
+    "Thickness": [
+      "25"
+    ],
+    "Type": "Metalized Sealable",
+    "Surface Treatment": "",
+    "Gloss Level": "",
+    "WVTR": "0.2",
+    "Features": " Outstanding oxygen barrier",
+    "OTR": [
+      "0.2"
+    ]
+  },
+  {
+    "Product Name": "MUSOB3",
+    "Application": [
+      "chips",
+      "snack"
+    ],
+    "Thickness": [
+      "25"
+    ],
+    "Type": "Metalized Sealable",
+    "Surface Treatment": "",
+    "Gloss Level": "",
+    "WVTR": "0.2",
+    "Features": "- Outstanding seal performance in terms ofseal strength (1 .5-2 kg) hot-tack and seal integrity",
+    "OTR": [
+      "0.2",
+      "8"
+    ]
+  },
+  {
+    "Product Name": "MDSOB6",
+    "Application": [
+      "Bakery",
+      "chips"
+    ],
+    "Thickness": [
+      "18",
+      "25"
+    ],
+    "Type": "Metalized Sealable",
+    "Surface Treatment": "",
+    "Gloss Level": "",
+    "WVTR": "0.2",
+    "Features": "Low SIT-95 & Seal strength of 400-450gm",
+    "OTR": [
+      "10"
+    ]
+  },
+  {
+    "Product Name": "MPHSOB3",
+    "Application": [
+      "snacks",
+      "crisp"
+    ],
+    "Thickness": [
+      "28"
+    ],
+    "Type": " Metalized Cavitated",
+    "Surface Treatment": "",
+    "Gloss Level": "",
+    "WVTR": "0.2",
+    "Features": " LOW SlT(95\u00b0C) HS BOPP with UHB",
+    "OTR": [
+      "0.1"
+    ]
+  },
+  {
+    "Product Name": "MPHSOB3",
+    "Application": [
+      ""
+    ],
+    "Thickness": [
+      "28"
+    ],
+    "Type": " Metalized Cavitated",
+    "Surface Treatment": "",
+    "Gloss Level": "",
+    "WVTR": "0.2",
+    "Features": " LOW SlT(95\u00b0C) HS BOPP with UHB",
+    "OTR": [
+      "0.1"
+    ]
+  },
+  {
+    "Product Name": "MDSHB",
+    "Application": [
+      "Biscuits",
+      "snacks"
+    ],
+    "Thickness": [
+      "18"
+    ],
+    "Type": "Metalized Sealable",
+    "Surface Treatment": "",
+    "Gloss Level": "",
+    "WVTR": "0.2",
+    "Features": " LOW SlT(95\u00b0C) HS BOPP with UHB",
+    "OTR": [
+      "8.0"
+    ]
+  },
+  {
+    "Product Name": "MSOB2",
+    "Application": [
+      "Dry powder",
+      "choclate"
+    ],
+    "Thickness": [
+      "18"
+    ],
+    "Type": "Metalized Sealable",
+    "Surface Treatment": "",
+    "Gloss Level": "",
+    "WVTR": "0.2",
+    "Features": "Seal strength of 400-450gm",
+    "OTR": [
+      "1"
+    ]
+  },
+  {
+    "Product Name": "MDQOB1",
+    "Application": [
+      "Ice cream",
+      "frozen food"
+    ],
+    "Thickness": [
+      "20"
+    ],
+    "Type": "Metalized Sealable",
+    "Surface Treatment": "",
+    "Gloss Level": "",
+    "WVTR": "0.2",
+    "Features": "LOW SlT(80-85\u00b0C) HS BOPP with UHB",
+    "OTR": [
+      "30"
+    ]
+  },
+  {
+    "Product Name": "TDS",
+    "Application": [
+      "Household",
+      "Detegent",
+      "frozen food"
+    ],
+    "Thickness": [
+      "18",
+      "20"
+    ],
+    "Type": "Transparent",
+    "Surface Treatment": "",
+    "Gloss Level": "",
+    "WVTR": "",
+    "Features": "- Wide sealing range with very low seal initiation temperature (SIT 95\u00b0C)",
+    "OTR": [
+      ""
+    ]
+  },
+  {
+    "Product Name": "MDS",
+    "Application": [
+      "Frozen food"
+    ],
+    "Thickness": [
+      "18",
+      "20"
+    ],
+    "Type": "Metalized",
+    "Surface Treatment": "",
+    "Gloss Level": "",
+    "WVTR": "",
+    "Features": "- Excellent sealing properties (SIT 95\u00b0C) in terms of seal strength, hot-tack and integrity",
+    "OTR": [
+      ""
+    ]
+  },
+  {
+    "Product Name": "MDHS*",
+    "Application": [
+      ""
+    ],
+    "Thickness": [
+      "18"
+    ],
+    "Type": "Metalized",
+    "Surface Treatment": "",
+    "Gloss Level": "",
+    "WVTR": "0.25",
+    "Features": "- Excellent sealing properties (SIT 90\u00b0C) in terms of seal strength, hot-tack and integrity",
+    "OTR": [
+      "50"
+    ]
+  },
+  {
+    "Product Name": "TDQ",
+    "Application": [
+      "Household",
+      "Detegent",
+      "frozen food"
+    ],
+    "Thickness": [
+      "18",
+      "20",
+      "30"
+    ],
+    "Type": "Transparent",
+    "Surface Treatment": "",
+    "Gloss Level": "",
+    "WVTR": "",
+    "Features": "Wide sealing range with very low seal initiation temperature (SIT 85\u00b0C)",
+    "OTR": [
+      ""
+    ]
+  },
+  {
+    "Product Name": "MDQ ",
+    "Application": [
+      "snacks"
+    ],
+    "Thickness": [
+      "18"
+    ],
+    "Type": "Metalized",
+    "Surface Treatment": "",
+    "Gloss Level": "",
+    "WVTR": "0.2",
+    "Features": " Excellent seal integrity (SIT 85\u00b0C) in presence of contaminants and humidity",
+    "OTR": [
+      "60"
+    ]
+  },
+  {
+    "Product Name": "MDILW3 ",
+    "Application": [
+      "Bakery",
+      "chips,Frozen"
+    ],
+    "Thickness": [
+      "18"
+    ],
+    "Type": "Metalized",
+    "Surface Treatment": "",
+    "Gloss Level": "",
+    "WVTR": "0.2",
+    "Features": "- Excellent metal adhesion, bond strength and treatment retention in metalized films (SIT 95\u00b0C)",
+    "OTR": [
+      "60"
+    ]
+  }
+]
